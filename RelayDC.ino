@@ -9,21 +9,21 @@ void setup() {
 
 void loop() {
 
-if (digitalRead(7) == 0 && digitalRead(11) == 1) {
+if (digitalRead(7) == 0 && digitalRead(11) == 1) { //  motor will rotate counter clockwise
   digitalWrite(1, 1);
   digitalWrite(13, 0);
   delay(1000);
 
 }
 
-else if (digitalRead(7) == 1 && digitalRead(11) == 0) {
+else if (digitalRead(7) == 1 && digitalRead(11) == 0) { //  motor will rotate clock wise
 
   digitalWrite(1, 0);
   digitalWrite(13, 1);
   delay(1000);
 }
 
-else if (digitalRead(7) == 0 && digitalRead(1) == 0) {
+else if (digitalRead(7) == 0 && digitalRead(1) == 0) { // motor will rotate in both directions
 
   digitalWrite(1, 1);
   digitalWrite(13, 0);
@@ -34,7 +34,7 @@ else if (digitalRead(7) == 0 && digitalRead(1) == 0) {
   delay(2000);
 }
 
-else { 
+else { // motor will stop
 
   digitalWrite(1, 0);
   digitalWrite(13, 0);
